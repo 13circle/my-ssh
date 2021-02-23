@@ -75,7 +75,7 @@ int main(int ac, char *av[]) {
   char *selected, *full_path;
 
   strcpy(base_dir, getenv("HOME"));
-  strcat(base_dir, "/sshconnect");
+  strcat(base_dir, "/.myssh/sshconnect");
 
   printf("\nSSH Client Shell Scripts \n");
   printf("-------- \n");
