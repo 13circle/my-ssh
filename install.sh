@@ -3,7 +3,8 @@
 base_dir="~/.myssh"
 script_dir="$base_dir/sshconnect"
 
-mkdir -p script_dir
+mkdir $base_dir 2> /dev/null
+mkdir $script_dir 2> /dev/null
 rm -f $base_dir/myssh
 
 git clone https://github.com/13circle/my-ssh $base_dir
