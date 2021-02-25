@@ -5,10 +5,14 @@ shellrc=$HOME/$shellrc_name
 
 base_dir="$HOME/.myssh"
 src_dir="$base_dir/src"
-script_dir="$base_dir/sshconnect"
+ssh_dir="$base_dir/sshconnect"
+keys_dir="$ssh_dir/keys"
+configs_dir="$ssh_dir/configs"
 
 mkdir $base_dir 2> /dev/null
-mkdir $script_dir 2> /dev/null
+mkdir $ssh_dir 2> /dev/null
+mkdir $keys_dir 2> /dev/null
+mkdir $configs_dir 2> /dev/null
 
 rm -rf $src_dir
 git clone https://github.com/13circle/my-ssh $src_dir
