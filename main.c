@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "./syslibs.h"
+#include "./sshconfig.h"
 
 int main(int ac, char *av[]) {
   
