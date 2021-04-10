@@ -10,4 +10,6 @@ typedef struct _SSH_Config {
   char key[128];
 } Config;
 
+Config *create_config(const char *config_name, const char *host_addr, const char *user_id, const char *key);
+
 #endif
